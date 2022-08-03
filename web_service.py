@@ -7,10 +7,10 @@ app = Flask(__name__)
 def db_connection():
 	conn = None
 	try:
-		conn = pymysql.connect(host='localhost',
-			                   user='root',
-			                   password = "manianni0512",
-			                   db='mysqldatabase',
+		conn = pymysql.connect(host='hostname',
+			                   user='yourusername',
+			                   password = "yourpassword",
+			                   db='yourdatabasename',
                                )
 	except pymysql.Error as e:
 		print(e)
